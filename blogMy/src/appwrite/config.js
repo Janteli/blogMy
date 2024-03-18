@@ -28,7 +28,7 @@ export class Service {
         }
     }
 // slug is as a document id
-    async updatePost (slug, {title, slug, content, featuredImage, status}){
+    async updatePost (slug, {title,  content, featuredImage, status}){
         try{
             return await this.databases.updateDocument(conf.appwriteDatabaseId, conf.appwriteCollectionId, slug, {
                 title,

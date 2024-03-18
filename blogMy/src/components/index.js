@@ -9,6 +9,9 @@ import Login from "../pages/Login";
 import PostForm from './post-form/PostForm'
 import PostCard from './PostCard'
 import AuthLayout from './AuthLayout'
+import Button from '../components/Button'
+import Input from '../components/Input'
+import Select from '../components/Select'
 
 export {
     Header,
@@ -21,5 +24,8 @@ export {
     Login,
     PostForm,
     PostCard,
-    AuthLayout
+    AuthLayout,
+    Button,
+    Input,
+    Select,
 }
