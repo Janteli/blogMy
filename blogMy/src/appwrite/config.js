@@ -21,11 +21,13 @@ export class Service {
                 content,
                 featuredImage,
                 status,
-                userId
+                userId,
+                
             })
         } catch(error){
             console.log("Appwrite service :: createPost :: error", error)
         }
+        console.log(appwriteCollectionId, appwriteDatabaseId)
     }
 // slug is as a document id
     async updatePost (slug, {title,  content, featuredImage, status}){
