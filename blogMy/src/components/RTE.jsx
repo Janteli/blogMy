@@ -3,7 +3,7 @@ import { Editor } from '@tinymce/tinymce-react';
 import { Controller } from 'react-hook-form'
 
 // controll from react-hook-form helps to reuse compnent in another
-export default function RTE({ name, control, label }) {
+export default function RTE({ name, control, label, defaultValue="" }) {
     return (
         // <Editor
         // initialValue='default value'
@@ -35,8 +35,7 @@ export default function RTE({ name, control, label }) {
                     <Editor
                         initialValue={defaultValue}
                         init={
-                            {
-                                branding: false,
+                            {                       initialValue: defaultValue,
                                 height: 500,
                                 menubar: true,
                                 plugins: [
